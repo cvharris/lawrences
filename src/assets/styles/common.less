@@ -2,8 +2,6 @@
   display: block;
   height: 100%;
   position: relative;
-  perspective: 1500px;
-  perspective-origin: 0% 50%;
   z-index: 1;
 
   &:after {
@@ -17,7 +15,7 @@
     display: block;
     z-index: 9;
     opacity: 0;
-    transform: translate3d(-100vw, 0, 0);
+    transform: translate3d(100vw, 0, 0);
     transition-duration: 0.5s;
     transition-property: opacity, transform;
     transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
@@ -62,6 +60,8 @@
   height: 100%;
   padding: .25rem;
   padding-right: 0;
+  display: flex;
+  align-items: center;
 }
 
 #logo {
@@ -77,46 +77,51 @@
 #content-main {
   position: relative;
   height: 100%;
-  padding-top: @header-height;
   background-color: @background-swatch;
-  perspective: 1000px;
   z-index: 8;
   transition: transform 0.5s;
   transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
 }
 
-body.menuOpen {
-  #site {
-    overflow: hidden;
+body {
+  &.menuOpen {
+    #site {
+      overflow: hidden;
 
-    &:after {
-      opacity: 1;
+      &:after {
+        opacity: 1;
+        transform: translate3d(-300px, 0, 0);
+        transition-duration: 0.5s;
+        transition-property: opacity, transform;
+        transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+      }
+    }
+
+    header {
+      transform: translate3d(0, 0, 0);
+    }
+
+    #content-main {
+      -webkit-transform: translate3d(-300px, 0, 0);
       transform: translate3d(-300px, 0, 0);
-      transition-duration: 0.5s;
-      transition-property: opacity, transform;
-      transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    }
+
+    #main-menu {
+      visibility: visible;
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+      -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+       -moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+         -o-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+            transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
   }
-
-  header {
-    transform: translate3d(0, 0, 0);
-  }
-
-  #content-main {
-    -webkit-transform: translate3d(-300px, 0, 0);
-    transform: translate3d(-300px, 0, 0);
-  }
-
-  #main-menu {
-    visibility: visible;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    -webkit-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
-     -moz-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
-       -o-transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
-          transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+  &.no-header {
+    .title-bar {
+      transform: translate3d(0, -100%, 0);
+    }
   }
 }
 

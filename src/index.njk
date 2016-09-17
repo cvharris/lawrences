@@ -8,7 +8,7 @@
       <div class="logo-box left">
         <div class="title">
           {# <img id="logo" class="logo" src="/img/Vatterott_Icon.png" /> #}
-          <span class="website-title name">Tyler and Jennifer Lawrence Wedding</span>
+          <span class="website-title name">{{ meta.title }}</span>
         </div>
       </div>
       <div id="menu-reveal" class="menu-button-container right">
@@ -19,6 +19,7 @@
   {% include "partials/nav.njk" %}
   <main id="content-main">
     {% include "partials/top.njk" %}
+    {% include "partials/about.njk" %}
     {% include "partials/footer.njk" %}
   </main>
 </div>
