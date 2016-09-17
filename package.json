@@ -1,0 +1,30 @@
+{
+  "name": "lawrences",
+  "version": "1.0.0",
+  "description": "Tyler and Jennifer Lawrence Wedding",
+  "main": "dist/index.html",
+  "scripts": {
+    "serve": "gulp serve"
+  },
+  "author": "cvharris",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-data": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-less": "latest",
+    "gulp-nunjucks-render": "latest",
+    "gulp-postcss": "6.1.1",
+    "gulp-rename": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "imagemin-pngquant": "latest",
+    "lodash": "latest",
+    "postcss-normalize": "latest"
+  }
+}
