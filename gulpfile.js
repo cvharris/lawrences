@@ -22,6 +22,12 @@ const del = require('del');
 const nunjucks = require('gulp-nunjucks-render');
 const data = require('gulp-data');
 const fs = require('fs');
+const fontmin = require('gulp-fontmin');
+// const Fontmin = require('fontmin');
+// const fontmin = new Fontmin()
+//                 .src(`${source}${assets}fonts/CornerStoreJF.ttf`)
+//                 .use(Fontmin.ttf2woff())
+//                 .dest(`${source}${assets}fonts/built`);
 
 const processors = [
   normalize,
@@ -69,6 +75,13 @@ gulp.task('images', () => {
     .pipe(browserSync.reload({stream:true}));
 });
 
+// move font files
+gulp.task('fonts', () => {
+  return gulp.src(`${source}${assets}fonts/*.ttf`)
+    .pipe(fontmin())
+    .pipe(gulp.dest(`${dest}fonts`));
+});
+
 // concatenate and minify javascript
 gulp.task('scripts', () => {
   return gulp.src([`${source}${assets}js/*.js`])
@@ -105,7 +118,7 @@ gulp.task('watch', ['clean'], () => {
 
 // build task to populate assets
 gulp.task('build', ['clean'], () => {
-  gulp.start('nunjucks', 'styles', 'scripts', 'images');
+  gulp.start('nunjucks', 'fonts', 'styles', 'scripts', 'images');
 });
 
 // default task kicks off the build, runs BrowserSync, and watches for changes

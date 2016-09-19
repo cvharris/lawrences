@@ -14,7 +14,7 @@ section#top {
 
 #top-section-container {
   text-align: center;
-  color: @white;
+  color: @green-secondary;
   height: 100%;
 }
 
@@ -26,15 +26,28 @@ section#top {
   align-items: center;
 }
 
+.bottom-centered {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.site-subtitle {
+  color: @pink-color;
+  margin-bottom: 8rem;
+}
+
 .site-slogan {
+  font-family: @fancy-font;
   font-size: 1.9rem;
   text-transform: capitalize;
-  margin-bottom: 8rem;
   margin-top: 4rem;
+  font-weight: 100;
 
   @media (min-width: @tablet) {
     font-size: 5rem;
-    margin-bottom: 6rem;
     line-height: 6rem;
     margin-top: 2rem;
     text-align: left;
@@ -42,9 +55,9 @@ section#top {
 }
 
 .action-button {
-  font-family: @sans-serif-font;
+  font-family: @base-font-family;
   color: @white;
-  background: @red-color;
+  background: @pink-color;
   cursor: pointer;
   -webkit-appearance: none;
   border: none;

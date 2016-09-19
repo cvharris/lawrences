@@ -16,6 +16,7 @@
     "gulp-clean-css": "latest",
     "gulp-concat": "latest",
     "gulp-data": "latest",
+    "gulp-fontmin": "^0.7.4",
     "gulp-imagemin": "latest",
     "gulp-less": "latest",
     "gulp-nunjucks-render": "latest",
