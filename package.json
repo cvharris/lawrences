@@ -20,10 +20,12 @@
     "gulp-imagemin": "latest",
     "gulp-less": "latest",
     "gulp-nunjucks-render": "latest",
+    "gulp-plumber": "latest",
     "gulp-postcss": "6.1.1",
     "gulp-rename": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
+    "gulp-util": "latest",
     "imagemin-pngquant": "latest",
     "lodash": "latest",
     "postcss-normalize": "latest"

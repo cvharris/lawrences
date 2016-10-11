@@ -28,7 +28,7 @@
   height: @header-height;
   background: @background-swatch;
   position: fixed;
-  border-bottom: .25rem solid @blue-primary;
+  border-bottom: .25rem solid @green-secondary;
   box-shadow: 0 .25rem 1rem 0 @grey-dark;
   top: 0;
   left: 0;
@@ -67,12 +67,18 @@
 
 .website-title {
   padding-left: .25rem;
+  color: @pink-color;
 }
 
 .menu-button-container {
   padding: 1rem 1.25rem;
   cursor: pointer;
   font-size: 1.5rem;
+  color: @pink-color;
+
+  &:active {
+    background: rgba(255, 255, 255, 0.5);
+  }
 }
 
 #content-main {
@@ -82,6 +88,12 @@
   z-index: 8;
   transition: transform 0.5s;
   transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.small-caps {
+  font-variant: small-caps;
+  font-size: 1.5rem;
+  line-height: 1rem;
 }
 
 body {

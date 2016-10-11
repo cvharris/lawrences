@@ -23,6 +23,8 @@ const nunjucks = require('gulp-nunjucks-render');
 const data = require('gulp-data');
 const fs = require('fs');
 const fontmin = require('gulp-fontmin');
+const gutil = require('gulp-util');
+const plumber = require('gulp-plumber');
 
 const processors = [
   normalize,
@@ -49,7 +51,12 @@ gulp.task('nunjucks', () => {
 gulp.task('styles', () => {
   return gulp.src(`${source}${assets}styles/main.less`)
     .pipe(sourcemaps.init())
-    .pipe(less())
+    .pipe(plumber())
+    .pipe(less().on('error', err => {
+        gutil.log(err);
+        this.emit('end');
+      })
+    )
     .pipe(postcss(processors))
     .pipe(cleancss(cleanCssOpts))
     .pipe(rename('main.min.css'))
@@ -105,7 +112,7 @@ gulp.task('clean', () => {
 // build files and watch for changes
 gulp.task('watch', ['clean'], () => {
   gulp.start('nunjucks', 'styles', 'scripts', 'images');
-  gulp.watch([`${source}templates/**/**/*.+(html|njk)`, `${source}templates/**/*.+(html|njk)`], ['nunjucks']);
+  gulp.watch([`${source}templates/**/**/*.+(html|njk)`, `${source}templates/**/*.+(html|njk)`, `${source}templates/*.+(html|njk)`], ['nunjucks']);
   gulp.watch([`${source}${assets}styles/*.*`, `${source}${assets}styles/shared/*.less`], ['styles']);
   gulp.watch(`${source}${assets}js/*.*`, ['scripts']);
   gulp.watch(`${source}${assets}img/*.*`, ['images']);
