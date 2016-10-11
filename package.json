@@ -12,7 +12,7 @@
     "autoprefixer": "latest",
     "browser-sync": "latest",
     "del": "latest",
-    "gulp": "latest",
+    "gulp": "3.9.1",
     "gulp-clean-css": "latest",
     "gulp-concat": "latest",
     "gulp-data": "latest",
@@ -27,7 +27,7 @@
     "gulp-uglify": "latest",
     "gulp-util": "latest",
     "imagemin-pngquant": "latest",
-    "lodash": "latest",
+    "lodash": "4.16.4",
     "postcss-normalize": "latest"
   }
 }

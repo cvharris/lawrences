@@ -1,0 +1,20 @@
+<div class="party-container">
+  {% for party in weddingParty %}
+  <div id="{{ party.id }}" class="party-group">
+    <h3 class="party-group-title">{{ party.name }} <i class="fa {{ party.icon }}"></i></h3>
+    <div class="party-members">
+      {% for member in party.members %}
+      <div class="party-member" id="{{ member.name }}">
+        <div class="party-member-wrapper">
+          <div class="party-member-photo image-container">
+            <img class="" src="/img/{{member.photo}}" />
+          </div>
+          <h4 class="party-member-name">{{member.name}}</h4>
+          <div class="party-member-info">{{member.info}}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

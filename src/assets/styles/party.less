@@ -1,0 +1,84 @@
+.party-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.party-group-title {
+  display: flex;
+  justify-content: center;
+
+  i {
+    padding: 0 1rem;
+  }
+}
+
+.party-member-wrapper {
+  padding: 0 1rem 1rem;
+}
+
+.party-member-name {
+  text-align: center;
+  line-height: 1rem;
+}
+
+.party-member-photo {
+  border-radius: 100%;
+  height: 175px;
+  width: 175px;
+}
+
+.party-member-info {
+  text-align: center;
+  font-size: .9rem;
+}
+
+.party-group:not(#ushers) {
+  // Necessary? Is it necessary that I drink my own urine?
+  // No but it's sterile and I like the taste.
+  .party-members {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .party-group-title {
+    justify-content: flex-end;
+  }
+
+  .party-member {
+    flex-basis: 50%;
+    height: 460px;
+
+    &:first-child {
+      flex-basis: 100%;
+
+      .party-member-wrapper {
+        padding: 0 2rem 2rem;
+      }
+
+      .party-member-photo {
+        height: 250px;
+        width: 250px;
+      }
+    }
+  }
+}
+
+#bridesmaids {
+  flex-basis: 50%;
+
+  .party-members {
+    justify-content: flex-end;
+  }
+}
+
+#groomsmen {
+  flex-basis: 50%;
+
+  .party-group-title {
+    flex-direction: row-reverse;
+  }
+}
+
+#ushers .party-members {
+  display: flex;
+}

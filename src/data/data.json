@@ -66,5 +66,103 @@
       "content": true,
       "active": true
     }
+  ],
+  "weddingParty": [
+    {
+      "id": "bridesmaids",
+      "name": "Bridesmaids",
+      "icon": "fa-female",
+      "members": [
+        {
+          "name": "Melissa",
+          "photo": "A1_Melissa.jpg",
+          "info": "Melissa is Jennifer’s younger sister and new accountant! They have shared so many fun memories together, but Jennifer’s favorites are traveling to Italy, being front row at all the concerts, meeting random celebrities, and quoting all the lines from The Princess Diaries."
+        },
+        {
+          "name": "Jacy",
+          "photo": "A2_Jacy.jpg",
+          "info": "Jacy and Jennifer are basically long lost sisters. They both share a love for wedding planning, cleaning, organization, cardigans, and Pinterest. Jennifer is so excited to be gaining her as a sister-in-law!"
+        },
+        {
+          "name": "Leslie",
+          "photo": "A3_Leslie.jpg",
+          "info": "Leslie and Jennifer met in pharmacy school and became fast friends. You can always find them bonding over girl talk, local breweries, and Painting with a Twist!"
+        },
+        {
+          "name": "Erin",
+          "photo": "A4_Erin.jpg",
+          "info": "Erin and Jennifer have been friends since high school and, contrary to popular belief, are not sisters or twins. They have shared countless memories together, including getting 2nd degree burns in Destin, playing to win at Disney World, and riding camels in the Sahara Desert."
+        },
+        {
+          "name": "Cora",
+          "photo": "A5_Cora.jpg",
+          "info": "Cora was one of Jennifer’s first friends in pharmacy school. They have survived countless crazy test weeks and always celebrated at the end with Tacos 4 Life and girl time!"
+        },
+        {
+          "name": "Riley",
+          "photo": "A6_Riley.jpg",
+          "info": "Jennifer is looking forward to having Riley as a sister-in-law! Riley loves cats more than the average cat lady, and is about to join Team Brazil when she marries Marcus, who is also one of Tyler’s groomsmen!"
+        }
+      ]
+    },
+    {
+      "id": "groomsmen",
+      "name": "Groomsmen",
+      "icon": "fa-male",
+      "members": [
+        {
+          "name": "Charlie",
+          "photo": "B1_Charlie.jpg",
+          "info": "Tyler & Charlie have been friends since their days on the high school swim team, where they received many, many awards and medals. Their bromance has only grown over the years and Tyler is honored to have Charlie as his best man."
+        },
+        {
+          "name": "Matt",
+          "photo": "B2_Matt.jpg",
+          "info": "Matt & Tyler may never see eye to eye on Steelers football, but their love for Cardinals baseball runs deep. Matt is Tyler’s brother-in-law, and Tyler’s happy to have had him as part of the family for the past 3 years."
+        },
+        {
+          "name": "Fitz",
+          "photo": "B3_Fitz.jpg",
+          "info": "If you’re looking for a good time, head to Fitz’s house. He and Tyler have been friends since their days on the Benedictine rugby team and he always knows how to get the party started!"
+        },
+        {
+          "name": "Pat",
+          "photo": "B4_Pat.jpg",
+          "info": "Pat and Tyler were also on the rugby team in undergrad together. There’s room in Tyler’s life for only 1 Cubs fan, and Pat is lucky enough to get that honor!"
+        },
+        {
+          "name": "Neil",
+          "photo": "B5_Neil.jpg",
+          "info": "As cousins, Neil and Tyler go way, way back. He and Tyler got close as some of the only male cousins on the Lawrence side of the family. And ladies, in case you’re wondering, he’s single and an engineer!"
+        },
+        {
+          "name": "Marcus",
+          "photo": "B6_Marcus.jpg",
+          "info": "Team Brazil joins Team USA when Marcus marries Tyler’s sister, Riley! Marcus is known for his excellent cooking and savvy business skills. He also has a close bond with Tyler’s dog, Charles!"
+        }
+      ]
+    },
+    {
+      "id": "ushers",
+      "name": "Ushers",
+      "icon": "fa-user-secret",
+      "members": [
+        {
+          "name": "Trey",
+          "photo": "C1_Trey.jpg",
+          "info": "Trey was one of Jennifer’s first friends at her church in Little Rock and is one of the most interesting people you will ever meet. He has a passion for politics, guns, America, and gardening. "
+        },
+        {
+          "name": "Scott",
+          "photo": "C2_Scott.jpg",
+          "info": "Scott is another one of Jennifer’s friends from Fellowship, and is always interested in learning about your life. He and Trey are roommates, and these guys know how to host a great party!"
+        },
+        {
+          "name": "Cameron",
+          "photo": "C3_Cameron.jpg",
+          "info": "Cameron enjoys reading, romantic dinners, and long walks on the beach. He and Tyler were friends in undergrad and got into all sorts of trouble together."
+        }
+      ]
+    }
   ]
 }
