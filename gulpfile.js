@@ -23,11 +23,6 @@ const nunjucks = require('gulp-nunjucks-render');
 const data = require('gulp-data');
 const fs = require('fs');
 const fontmin = require('gulp-fontmin');
-// const Fontmin = require('fontmin');
-// const fontmin = new Fontmin()
-//                 .src(`${source}${assets}fonts/CornerStoreJF.ttf`)
-//                 .use(Fontmin.ttf2woff())
-//                 .dest(`${source}${assets}fonts/built`);
 
 const processors = [
   normalize,
@@ -110,10 +105,12 @@ gulp.task('clean', () => {
 // build files and watch for changes
 gulp.task('watch', ['clean'], () => {
   gulp.start('nunjucks', 'styles', 'scripts', 'images');
-  gulp.watch(`${source}templates/**/**/*.+(html|njk)`, ['nunjucks']);
-  gulp.watch(`${source}${assets}styles/*`, ['styles']);
-  gulp.watch(`${source}${assets}js/*`, ['scripts']);
-  gulp.watch(`${source}${assets}img/*`, ['images']);
+  gulp.watch([`${source}templates/**/**/*.+(html|njk)`, `${source}templates/**/*.+(html|njk)`], ['nunjucks']);
+  gulp.watch([`${source}${assets}styles/*.*`, `${source}${assets}styles/shared/*.less`], ['styles']);
+  gulp.watch(`${source}${assets}js/*.*`, ['scripts']);
+  gulp.watch(`${source}${assets}img/*.*`, ['images']);
+  gulp.watch(`${source}data/*.json`, ['nunjucks']);
+  gulp.watch(`${dest}index.html`).on('change', browserSync.reload);
 });
 
 // build task to populate assets

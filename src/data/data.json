@@ -34,14 +34,14 @@
     {
       "id": "reception",
       "label": "Reception",
-      "menuIcon": "fa-cake",
+      "menuIcon": "fa-birthday-cake",
       "content": true,
       "active": true
     },
     {
       "id": "hotels",
       "label": "Accomodations",
-      "menuIcon": "fa-cake",
+      "menuIcon": "fa-bed",
       "content": true,
       "active": true
     },
@@ -61,7 +61,7 @@
     },
     {
       "id": "photos",
-      "label": "Registry",
+      "label": "Photos",
       "menuIcon": "fa-camera",
       "content": true,
       "active": true
