@@ -1,5 +1,5 @@
 #hotels {
-  flex-basis: 50%;
+  background-color: none;
 
   p {
     text-align: center;
@@ -10,12 +10,25 @@
   }
 
   .hotel-buttons {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+
+    @media (min-width: @tablet) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .action-button {
-    width: auto;
+    width: 240px;
     margin: 0 1rem 2rem;
+
+    @media (min-width: @tablet) {
+      width: auto;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    flex-basis: 50%;
+    background-color: @god-rays;
   }
 }

@@ -16,13 +16,19 @@ nav#main-menu {
   transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
 }
 
+.menu-section {
+  padding-top: 1rem;
+}
+
 .section-link {
   display: block;
   position: relative;
   color: @pink-color;
   cursor: pointer;
-  padding: 1em;
-  font-size: 1.25em;
+  padding: 1rem 2rem;
+  margin-left: .75rem;
+  text-indent: -.75rem;
+  font-size: 1.2em;
   transition: color 0.3s;
   transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 
@@ -66,5 +72,10 @@ nav#main-menu {
       -webkit-transform: scale3d(0.8, 0.8, 1);
       transform: scale3d(0.8, 0.8, 1);
     }
+  }
+
+  @media (min-width: @tablet) {
+    padding: 1.5rem 2rem;
+    font-size: 1.25em;
   }
 }

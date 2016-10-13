@@ -1,7 +1,9 @@
 <div class="party-container">
   {% for party in weddingParty %}
   <div id="{{ party.id }}" class="party-group">
-    <h3 class="party-group-title">{{ party.name }} <i class="fa {{ party.icon }}"></i></h3>
+    <h3 class="party-group-title">
+      <span>{{ party.name }}</span> <i class="fa {{ party.icon }}"></i>
+    </h3>
     <div class="party-members">
       {% for member in party.members %}
       <div class="party-member" id="{{ member.name }}">

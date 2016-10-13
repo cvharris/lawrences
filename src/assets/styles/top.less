@@ -1,4 +1,4 @@
-section#top {
+#top {
   display: block;
   height: 450px;
   width: 100%;
@@ -29,10 +29,13 @@ section#top {
 
 .bottom-centered {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 .site-subtitle {
@@ -44,7 +47,7 @@ section#top {
   font-family: @fancy-font;
   font-size: 1.9rem;
   text-transform: capitalize;
-  margin-top: 4rem;
+  margin-top: 20rem;
   font-weight: 100;
 
   @media (min-width: @tablet) {

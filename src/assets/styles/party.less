@@ -1,14 +1,34 @@
+#party {
+  background-color: @god-rays;
+  max-width: 100%;
+}
+
 .party-container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 .party-group-title {
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: center;
 
   i {
+    flex-basis: 100%;
+    text-align: center;
     padding: 0 1rem;
+  }
+
+  @media (min-width: @tablet) {
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    i {
+      flex-basis: auto;
+      text-align: left;
+    }
   }
 }
 
@@ -23,8 +43,8 @@
 
 .party-member-photo {
   border-radius: 100%;
-  height: 175px;
-  width: 175px;
+  height: 150px;
+  width: 150px;
 }
 
 .party-member-info {
@@ -41,12 +61,13 @@
   }
 
   .party-group-title {
-    justify-content: flex-end;
+
+    @media (min-width: @tablet) {
+      justify-content: flex-end;
+    }
   }
 
   .party-member {
-    flex-basis: 50%;
-    height: 460px;
 
     &:first-child {
       flex-basis: 100%;
@@ -54,6 +75,11 @@
       .party-member-wrapper {
         padding: 0 2rem 2rem;
       }
+    }
+
+    @media (min-width: @tablet) {
+      flex-basis: 50%;
+      height: 460px;
 
       .party-member-photo {
         height: 250px;
@@ -64,21 +90,30 @@
 }
 
 #bridesmaids {
-  flex-basis: 50%;
 
-  .party-members {
-    justify-content: flex-end;
+  @media (min-width: @tablet) {
+    flex-basis: 50%;
+
+    .party-members {
+      justify-content: flex-end;
+    }
   }
 }
 
 #groomsmen {
-  flex-basis: 50%;
 
-  .party-group-title {
-    flex-direction: row-reverse;
+  @media (min-width: @tablet) {
+    flex-basis: 50%;
+
+    .party-group-title {
+      flex-direction: row-reverse;
+    }
   }
 }
 
 #ushers .party-members {
-  display: flex;
+
+  @media (min-width: @tablet) {
+    display: flex;
+  }
 }

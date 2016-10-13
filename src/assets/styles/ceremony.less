@@ -1,19 +1,25 @@
 #ceremony {
-  background-color: @god-rays;
 
   @media (min-width: @tablet) {
+    padding-bottom: 4rem;
     flex-basis: 50%;
   }
 }
 
 .venue-picture {
-  height: 333px;
-  width: 500px;
+  height: 165px;
+  width: 250px;
   overflow: visible;
+
+  @media (min-width: @tablet) {
+    height: 333px;
+    width: 500px;
+  }
 }
 
 .venue-title {
   text-align: center;
+  color: @green-secondary;
 }
 
 .shadowed {

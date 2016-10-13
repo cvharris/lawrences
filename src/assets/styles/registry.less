@@ -1,5 +1,12 @@
+#registry {
+  padding-bottom: 4rem;
+}
+
 .registry-links {
-  display: flex;
+
+  @media (min-width: @tablet) {
+    display: flex;
+  }
 }
 
 .svg-holder {
@@ -11,6 +18,13 @@
 .registry-link {
   flex: 0 0 50%;
   text-align: center;
+  padding: 2rem;
+}
+
+.text-center {
+  max-width: 20rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #dillards-logo,

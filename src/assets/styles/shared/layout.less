@@ -8,16 +8,23 @@ body {
 
 .container {
   padding: @spacing-unit / 2;
-  max-width: 60rem;
   margin: 0 auto;
+  max-width: 100%;
 
   @media (min-width: @tablet) {
     padding: @spacing-unit;
+    max-width: 60rem;
   };
 }
 
 section:not(:first-child) {
-  padding-top: 4rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 4rem;
+
+  @media (min-width: @tablet) {
+    padding-top: 4rem !important;
+    padding-bottom: inherit;
+  }
 }
 
 .section-heading {
@@ -26,13 +33,19 @@ section:not(:first-child) {
   font-weight: 100;
   text-align: center;
   line-height: 3.5rem;
+  font-size: 1.5rem;
 
   i {
     display: block;
-    line-height: 5rem;
+    line-height: 1rem;
   }
 
   @media (min-width: @tablet) {
     margin-bottom: 3rem;
+
+    i {
+      font-size: 2rem;
+      line-height: 5rem;
+    }
   };
 }
