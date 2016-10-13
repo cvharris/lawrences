@@ -1,0 +1,7 @@
+<ul>
+  {% for todo in todos %}
+    <a href="{{ todo.link }}" class="todo-link" target="_blank">
+      <li>{{ todo.label | safe }}</li>
+    </a>
+  {% endfor %}
+</ul>

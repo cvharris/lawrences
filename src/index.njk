@@ -22,7 +22,7 @@
     {% for section in sections %}
       {% if section.active and section.content %}
       <section id="{{ section.id }}" class="container">
-        <h1 class="section-heading"><i class="fa {{ section.menuIcon }}"></i>{{section.label}}</h1>
+        <h1 class="section-heading"><i class="fa {{ section.menuIcon }}"></i>{{ section.label | safe }}</h1>
         {% include "partials/" + section.id + ".njk" ignore missing %}
       </section>
       {% endif %}

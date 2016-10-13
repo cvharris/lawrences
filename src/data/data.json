@@ -47,7 +47,7 @@
     },
     {
       "id": "todo",
-      "label": "Fun Things to Do in Little Rock",
+      "label": "Fun Things To Do<br />in Little Rock",
       "menuIcon": "fa-child",
       "content": true,
       "active": true
@@ -163,6 +163,56 @@
           "info": "Cameron enjoys reading, romantic dinners, and long walks on the beach. He and Tyler were friends in undergrad and got into all sorts of trouble together."
         }
       ]
+    }
+  ],
+  "todos": [
+    {
+      "label": "Clinton Presidental Library",
+      "link": "https://goo.gl/maps/NebKVZehn4C2"
+    },
+    {
+      "label": "Little Rock River Market",
+      "link": "https://goo.gl/maps/cMM4qjhoAA62"
+    },
+    {
+      "label": "Junction Bridge",
+      "link": "https://goo.gl/maps/4CzyS8dKqLU2"
+    },
+    {
+      "label": "Arkansas Arts Center",
+      "link": "https://goo.gl/maps/kmbW5QhMvqr"
+    },
+    {
+      "label": "Old State House",
+      "link": "https://goo.gl/maps/YCgHeVGWx2C2"
+    },
+    {
+      "label": "Big Dam Bridge",
+      "link": "https://goo.gl/maps/Rz6WcSLAYv62"
+    },
+    {
+      "label": "Arkansas State Capitol building",
+      "link": "https://goo.gl/maps/WGHFSDVmnpy"
+    },
+    {
+      "label": "Museum of Discovery",
+      "link": "https://goo.gl/maps/q7AQdBVHBp62"
+    },
+    {
+      "label": "Little Rock Zoo",
+      "link": "https://goo.gl/maps/DvpzEzq2JVT2"
+    },
+    {
+      "label": "Pinnacle Mountain State Park",
+      "link": "https://goo.gl/maps/Vh9JjPNmNkT2"
+    },
+    {
+      "label": "Two Rivers Park",
+      "link": "https://goo.gl/maps/xwFCHKCfg7M2"
+    },
+    {
+      "label": "The Old Mill (featured in <em>Gone With The Wind</em>)",
+      "link": "https://goo.gl/maps/NcLbhtg23j72"
     }
   ]
 }

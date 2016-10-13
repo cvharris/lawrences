@@ -3,8 +3,12 @@ section#about {
 }
 
 .columned {
-  display: flex;
-  justify-content: space-around;
+  display: block;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .column-heading {
@@ -17,7 +21,7 @@ section#about {
 }
 
 .column {
-  flex-basis: 46%;
+  display: block;
 
   p {
     text-align: justify;
@@ -33,5 +37,9 @@ section#about {
         line-height: 1rem;
       }
     }
+  }
+
+  @media (min-width: @tablet) {
+    flex-basis: 46%;
   }
 }
