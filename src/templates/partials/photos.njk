@@ -1,0 +1,7 @@
+<div class="slideshow-container">
+  {% for photo in slideshowPhotos %}
+  <figure class="photo">
+    <img class="photo-img" src="/img/{{ photo.url }}" />
+  </figure>
+  {% endfor %}
+</div>
