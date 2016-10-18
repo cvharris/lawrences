@@ -1,11 +1,17 @@
 #rsvp {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  max-width: 100%;
+  background-color: lighten(@grey-lightest, 3%);
 
   .section-heading {
-    letter-spacing: .75rem;
+    letter-spacing: .5rem;
 
     i {
       letter-spacing: 0;
+    }
+
+    @media (min-width: @tablet) {
+      letter-spacing: .75rem;
     }
   }
 

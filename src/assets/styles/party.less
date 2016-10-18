@@ -76,16 +76,20 @@
       .party-member-wrapper {
         padding: 0 2rem 2rem;
       }
+
+      @media (min-width: @tablet) {
+        height: 460px;
+
+        .party-member-photo {
+          height: 250px;
+          width: 250px;
+        }
+      }
     }
 
     @media (min-width: @tablet) {
       flex-basis: 50%;
-      height: 460px;
-
-      .party-member-photo {
-        height: 250px;
-        width: 250px;
-      }
+      height: 400px;
     }
   }
 }
